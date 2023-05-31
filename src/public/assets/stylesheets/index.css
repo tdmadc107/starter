@@ -1,0 +1,126 @@
+/* -------------------  MOBILE  --------------------- */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url(../background_mars.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+/* header styles */
+header {
+  color: rgb(195, 55, 55);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+.typed-out {
+  text-align: end;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation:
+    typing 10s steps(100, end) infinite;
+  font-size: 1.6rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+main {
+  flex: 1;
+  padding: 20px 50px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: column;
+}
+
+.navigation__item--left {
+  display: flex;
+  align-self: flex-start;
+}
+
+.navigation__button {
+  border: 0;
+  background-color: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+  font-weight: bolder;
+  color: chocolate;
+  transition: transform .2s;
+}
+
+.navigation__button:hover {
+  color: coral;
+  transform: scale(1.5);
+}
+
+.title {
+  color: coral;
+  margin: 10px 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.text-loading {
+  color: darkgray;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-align: center;
+}
+
+footer {
+  /* footer styles */
+}
+
+/* -------------------  TABLET  --------------------- */
+@media (min-width: 768px) {
+  /* use mobile */
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+}
